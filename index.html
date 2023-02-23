@@ -9,31 +9,33 @@
   </head>
   
 <body>
-<img src="beatles.jpg" width="399" height="299">
-<img src="a.jfif" width="1399" height="1299">
-  <p>Before the script...https://github.com/azandede/20230223/blob/main/index.html</p>
 
+  <p id="plus">Before the script...https://github.com/azandede/20230223/blob/main/index.html</p>
+  <p id="subtract">Before the script...https://github.com/azandede/20230223/blob/main/index.html</p>
+  <p id="times">Before the script...https://github.com/azandede/20230223/blob/main/index.html</p>
+  <p id="divid">Before the script...https://github.com/azandede/20230223/blob/main/index.html</p>
   <script>
     x = 1;
     y = 2;
     z = x + y;
-    alert( z );
+    document.querySelector("#plus").innerText = z;
 
 
     x = 100;
     z = x - y;
-    alert( z );
+      document.querySelector("#subtract").innerText = z;
 
     x = 1;
 
     z = x * y;
-    alert( z );
+         document.querySelector("#times").innerText = z;
 
 
     z = x / y;
-    alert( z );
+         document.querySelector("#divid").innerText = z;
   </script>
-
+<img src="beatles.jpg" width="399" height="299">
+<img src="a.jfif" width="1399" height="1299">
   <p>...After the script.</p>
 
 </body>
