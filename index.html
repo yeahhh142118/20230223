@@ -36,11 +36,11 @@
 <script>
 let message = "hello";
 
-let x = "共產黨";
-let y = "國民黨";
+let x = "共產黨<img src= 'https://images.wsj.net/im-668426?width=860&height=573' width='100' height='60'>";
+let y = "國民黨<img src= 'https://storage.googleapis.com/www-cw-com-tw/article/201905/article-5cda6930d485d.JPG' width='100' height='60'>";
 
-document.querySelector("#result1").innerText = x
-document.querySelector("#result2").innerText = y
+document.querySelector("#result1").innerHTML = x
+document.querySelector("#result2").innerHTML = y
 
 function show() {
 	let result_x = document.querySelector("#x").value;
