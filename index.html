@@ -1,21 +1,33 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>第三次就上手</title>
-    <link rel="icon" href="https://media.vogue.com.tw/photos/60a4c16d2ab25e19d3982bc7/3:4/w_1998,h_2664,c_limit/%E6%96%B0%E5%9E%A3%E7%B5%90%E8%A1%A3.jpeg" />
+<style>
+	#result1 {
+		background-image:url(https://cdn2.ettoday.net/images/4609/d4609478.jpg);
+		background-size: 500px 300px;
+		background-color : red;
+		width: 500px;
+		height: 300px;
+	}
+	#result2 {
+		background-image:url(https://imgs.gvm.com.tw/upload/gallery/20181029/54626_01.jpg);
+		background-size: 300px 200px;
+		background-color : blue;
+		width: 300px;
+		height: 200px;
+	}
+</style>
 
-  </head>
-  
-<body>
+<div id='result1'>
+</div>
 
-  <p>Before the script...</p>
+<div id='result2'>
+</div>
 
-  <script>
-    //alert( 'Hello, world!' );
-  </script>
+<script>
+let message = "hello";
 
-  <p>...After the script.</p>
+let x = 1;
+let y = 2;
+let z = x < y
+document.querySelector("#result1").innerText = x
+document.querySelector("#result2").innerText = y
 
-</body>
-
-</html>
+</script>
