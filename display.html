@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>顯示與隱藏</title>
+
+	<style>
+		.communication img{
+			width: auto ;
+			height: 200 ;
+		}
+
+		.history img{
+			width: auto;
+			height: 200;
+		}
+
+		.cartoon img{
+			width: auto;
+			height: 200;
+		}
+
+		.communication, .history, .cartoon{
+			display: inline-block;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<button onclick="hide();">隱藏文字</button>
+	<button onclick="show();">顯示文字</button>
+	<button onclick="hide唐士哲();">唐士哲不見了</button>
+	<button onclick="show唐士哲();">唐士哲出現了</button>
+	<button onclick="hide羅世宏();">羅世宏不見了</button>
+	<button onclick="show羅世宏();">羅世宏出現了</button>
+
+	<div class="news_title">
+		第六週上課
+		<br/>
+		要準備期中報告了
+	</div>
+
+<div class="a"> 
+
+	<div class="唐士哲 communication">
+		<img src="https://telecom.ccu.edu.tw/var/file/88/1088/img/256/188_img_100.jpg">
+	</div>
+
+	<div class="羅世宏 communication">
+		<img src="https://telecom.ccu.edu.tw/var/file/88/1088/img/256/5290_img_10.jpg">
+	</div>
+
+	<div class="唐士哲 communication">
+		<img src="https://www.mediawatch.org.tw/sites/default/files/s200_shih-che.tang_.jpg">
+	</div>
+
+    <div class="蔡崇隆 communication">
+	<img src="https://www.persona-media.com/wp-content/uploads/2022/11/%E5%B0%8F%E6%AA%9406%E8%94%A1%E5%B4%87%E9%9A%86-1.jpg">
+    </div>
+
+</div>
+
+<div class="b"> 
+
+    <div class="王安石 history">
+	<img src="https://pic4.zhimg.com/80/v2-10b61a077827a0c9b9307c4bb9a754b3_1440w.webp" width=100 height=100>
+    </div>
+
+    <div class="李白 history">
+	<img src="https://www.greenconut.com/wp-content/uploads/2022/04/poet_0401-1024x683.jpeg" width=100 height=100>
+    </div>
+
+    <div class="孟浩然 history">
+	<img src="https://i.epochtimes.com/assets/uploads/2005/06/201292684310.jpg" width=100 height=100>
+    </div>
+
+</div>
+
+<div class="c"> 
+
+    <div class="海綿寶寶 cartoon">
+	<img src="https://static.wikia.nocookie.net/worldpedias/images/a/a4/Spongebob_SquarePants.jpg/revision/latest?cb=20140620141253&path-prefix=zh" width=100 height=100>
+    </div>
+
+    <div class="佩佩豬 cartoon">
+	<img src="https://i1.wp.com/popbee.com/image/2019/07/peppa-pig-7-1-tall-peppa-pig-height-memes-1.jpg?quality=95&" width=100 height=100>
+    </div>
+
+</div>
+
+	<script type="text/javascript">
+
+		function hide(){
+			document.querySelector(".news_title").style.display="none";
+		}
+
+		function show(){
+			document.querySelector(".news_title").style.display="block";
+		}
+
+		function hide唐士哲(){
+			let elements = document.querySelectorAll(".唐士哲");
+			for(let i = 0; i <elements.length; i=i+1) {
+				elements[i].style.display = "none";
+			}
+		}
+
+		function show唐士哲(){
+			let elements = document.querySelectorAll(".唐士哲")
+			for(let i = 0; i <elements.length; i=i+1) {
+				elements[i].style.display = "block";
+			}
+		}
+
+		function hide羅世宏(){
+			document.querySelector(".羅世宏").style.display="none";
+		}
+
+		function show羅世宏(){
+			document.querySelector(".羅世宏").style.display="block";
+		}
+
+		function hide蔡崇隆(){
+			document.querySelector(".蔡崇隆").style.display="none";
+		}
+
+		function show蔡崇隆(){
+			document.querySelector(".蔡崇隆").style.display="block";
+		}
+
+	</script>
+</body>
+
+<html>
